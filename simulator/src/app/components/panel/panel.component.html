@@ -1,0 +1,23 @@
+<div class="bg-neutral-200 top-0 h-screen w-72 border-neutral-300 border-x">
+    <div class="w-4/5 h-16 mb-2 mx-auto flex items-center align-middle">
+        <span class="material-icons-outlined text-6xl absolute"> admin_panel_settings </span>
+
+        <h1 class="w-full my-auto text-center">Admin Panel</h1>
+    </div>
+
+    <div class="Entries">
+        <div class="px-3 hover:bg-hoverBlack transition-all py-1">
+            <div>
+                <h1 class="absolute">Entries</h1>
+                <!-- expand_less -->
+                <span class="material-icons-outlined w-full text-right cursor-pointer hover:translate-y-0.5 translate-y-0 transition-all">
+                    expand_less
+                </span>
+            </div>
+            <div class="group h-6 pl-4 flex cursor-pointer hover:bg-hoverBlack" *ngFor="let entry of keys">
+                <span class="material-icons text-left"> data_object </span>
+                <h1 class="pl-3 group-hover:font-medium group-hover:translate-x-1 translate-x-0 transition-all">{{ entry }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
